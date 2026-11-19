@@ -142,3 +142,17 @@ port scanning may break your ISP's or employer's rules and, in many countries, t
 ## License
 
 [MIT](LICENSE) - Copyright (c) 2026 Arnold Rurangwa
+
+---
+
+## Maintainer release checklist
+
+Only scan assets for which you have explicit authorization. A successful TCP connection or banner is **not** proof that a service is vulnerable.
+
+- Test single targets, ranges, CIDR boundaries and invalid port specifications in controlled environments.
+- Limit concurrency and retries to avoid disrupting production systems; ensure all scans can be cancelled.
+- Keep PowerShell and bash options/documentation aligned, with OS-specific differences explained.
+- For security, avoid default scanning of third-party hosts, secret logging or unsafe credential handling.
+- Require linting, mock/fixture checks and manual tests for code or output format changes before release.
+
+This is a local diagnostic CLI. Container orchestration is not needed for ordinary use.
